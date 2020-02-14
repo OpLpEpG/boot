@@ -59,25 +59,25 @@ The CXX compiler identification is GNU, found in "D:/Projects/vsc/boot/build/CMa
 Determining if the C compiler works passed with the following output:
 Change Dir: D:/Projects/vsc/boot/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_25c72 && [1/2] Building C object CMakeFiles/cmTC_25c72.dir/testCCompiler.c.obj
-[2/2] Linking C static library libcmTC_25c72.a
-C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_25c72.dir/testCCompiler.c.obj: plugin needed to handle lto object
-C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_25c72.a(testCCompiler.c.obj): plugin needed to handle lto object
+Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_93ae7 && [1/2] Building C object CMakeFiles/cmTC_93ae7.dir/testCCompiler.c.obj
+[2/2] Linking C static library libcmTC_93ae7.a
+C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_93ae7.dir/testCCompiler.c.obj: plugin needed to handle lto object
+C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_93ae7.a(testCCompiler.c.obj): plugin needed to handle lto object
 
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: D:/Projects/vsc/boot/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_fec30 && [1/2] Building C object CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj
+Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_af86f && [1/2] Building C object CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj
 Using built-in specs.
 COLLECT_GCC=C:\gnu_arm_embedded\bin\arm-none-eabi-gcc.exe
 Target: arm-none-eabi
 Configured with: /mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile
 Thread model: single
 gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 
-COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
- c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -o C:\Users\oleg\AppData\Local\Temp\cc8sptM6.s
+COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -o C:\Users\oleg\AppData\Local\Temp\ccXAZEEw.s
 GNU C17 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)
 	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -98,15 +98,15 @@ GNU C17 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: d48d906eaae8455a6540c74ba2cbe16a
-COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
- c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj C:\Users\oleg\AppData\Local\Temp\cc8sptM6.s
+COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj C:\Users\oleg\AppData\Local\Temp\ccXAZEEw.s
 GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025
 COMPILER_PATH=c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/;c:/gnu_arm_embedded/bin/../lib/gcc/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/;c:/gnu_arm_embedded/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/;c:/gnu_arm_embedded/bin/../lib/gcc/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/;c:/gnu_arm_embedded/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
-[2/2] Linking C static library libcmTC_fec30.a
-C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj: plugin needed to handle lto object
-C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_fec30.a(CMakeCCompilerABI.c.obj): plugin needed to handle lto object
+COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+[2/2] Linking C static library libcmTC_af86f.a
+C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj: plugin needed to handle lto object
+C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_af86f.a(CMakeCCompilerABI.c.obj): plugin needed to handle lto object
 
 
 
@@ -127,15 +127,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: D:/Projects/vsc/boot/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_fec30 && [1/2] Building C object CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_af86f && [1/2] Building C object CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\gnu_arm_embedded\bin\arm-none-eabi-gcc.exe]
   ignore line: [Target: arm-none-eabi]
   ignore line: [Configured with: /mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile]
   ignore line: [Thread model: single]
   ignore line: [gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
-  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -o C:\Users\oleg\AppData\Local\Temp\cc8sptM6.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -o C:\Users\oleg\AppData\Local\Temp\ccXAZEEw.s]
   ignore line: [GNU C17 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)]
   ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -156,8 +156,8 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: d48d906eaae8455a6540c74ba2cbe16a]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
-  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj C:\Users\oleg\AppData\Local\Temp\cc8sptM6.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj C:\Users\oleg\AppData\Local\Temp\ccXAZEEw.s]
   ignore line: [GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025]
   ignore line: [COMPILER_PATH=c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/]
   ignore line: [c:/gnu_arm_embedded/bin/../lib/gcc/]
@@ -169,10 +169,10 @@ Parsed C implicit link information from above output:
   ignore line: [c:/gnu_arm_embedded/bin/../lib/gcc/]
   ignore line: [c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/gnu_arm_embedded/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
-  ignore line: [[2/2] Linking C static library libcmTC_fec30.a]
-  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_fec30.dir/CMakeCCompilerABI.c.obj: plugin needed to handle lto object]
-  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_fec30.a(CMakeCCompilerABI.c.obj): plugin needed to handle lto object]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-v' '-o' 'CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [[2/2] Linking C static library libcmTC_af86f.a]
+  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_af86f.dir/CMakeCCompilerABI.c.obj: plugin needed to handle lto object]
+  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_af86f.a(CMakeCCompilerABI.c.obj): plugin needed to handle lto object]
   ignore line: []
   ignore line: []
   implicit libs: []
@@ -183,25 +183,25 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: D:/Projects/vsc/boot/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_c32c7 && [1/2] Building CXX object CMakeFiles/cmTC_c32c7.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX static library libcmTC_c32c7.a
-C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_c32c7.dir/testCXXCompiler.cxx.obj: plugin needed to handle lto object
-C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_c32c7.a(testCXXCompiler.cxx.obj): plugin needed to handle lto object
+Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_a12c4 && [1/2] Building CXX object CMakeFiles/cmTC_a12c4.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX static library libcmTC_a12c4.a
+C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_a12c4.dir/testCXXCompiler.cxx.obj: plugin needed to handle lto object
+C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_a12c4.a(testCXXCompiler.cxx.obj): plugin needed to handle lto object
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: D:/Projects/vsc/boot/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_14bf0 && [1/2] Building CXX object CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_18012 && [1/2] Building CXX object CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj
 Using built-in specs.
 COLLECT_GCC=C:\gnu_arm_embedded\bin\arm-none-eabi-g++.exe
 Target: arm-none-eabi
 Configured with: /mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile
 Thread model: single
 gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 
-COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
- c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1plus.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -o C:\Users\oleg\AppData\Local\Temp\ccHQrf8M.s
+COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1plus.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -o C:\Users\oleg\AppData\Local\Temp\ccyr6D4j.s
 GNU C++14 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)
 	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -228,15 +228,15 @@ GNU C++14 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 170ff1c01984ee844c36675da8099675
-COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
- c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\oleg\AppData\Local\Temp\ccHQrf8M.s
+COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\oleg\AppData\Local\Temp\ccyr6D4j.s
 GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025
 COMPILER_PATH=c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/;c:/gnu_arm_embedded/bin/../lib/gcc/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/;c:/gnu_arm_embedded/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/;c:/gnu_arm_embedded/bin/../lib/gcc/;c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/;c:/gnu_arm_embedded/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
-[2/2] Linking CXX static library libcmTC_14bf0.a
-C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj: plugin needed to handle lto object
-C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_14bf0.a(CMakeCXXCompilerABI.cpp.obj): plugin needed to handle lto object
+COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+[2/2] Linking CXX static library libcmTC_18012.a
+C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj: plugin needed to handle lto object
+C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_18012.a(CMakeCXXCompilerABI.cpp.obj): plugin needed to handle lto object
 
 
 
@@ -263,15 +263,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: D:/Projects/vsc/boot/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_14bf0 && [1/2] Building CXX object CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Run Build Command(s):C:/ProgramData/chocolatey/bin/ninja.exe cmTC_18012 && [1/2] Building CXX object CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\gnu_arm_embedded\bin\arm-none-eabi-g++.exe]
   ignore line: [Target: arm-none-eabi]
   ignore line: [Configured with: /mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-9-pipeline/jenkins-GCC-9-pipeline-100_20191030_1572397542/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile]
   ignore line: [Thread model: single]
   ignore line: [gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
-  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1plus.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -o C:\Users\oleg\AppData\Local\Temp\ccHQrf8M.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1plus.exe -quiet -v -imultilib thumb/v7-m/nofp -iprefix c:\gnu_arm_embedded\bin\../lib/gcc/arm-none-eabi/9.2.1/ -isysroot c:\gnu_arm_embedded\bin\../arm-none-eabi -D__USES_INITFINI__ -D STM32 C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj -Wall -Wextra -version -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -flto -fno-move-loop-invariants -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -o C:\Users\oleg\AppData\Local\Temp\ccyr6D4j.s]
   ignore line: [GNU C++14 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)]
   ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -298,8 +298,8 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 170ff1c01984ee844c36675da8099675]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
-  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\oleg\AppData\Local\Temp\ccHQrf8M.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\oleg\AppData\Local\Temp\ccyr6D4j.s]
   ignore line: [GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025]
   ignore line: [COMPILER_PATH=c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/]
   ignore line: [c:/gnu_arm_embedded/bin/../lib/gcc/]
@@ -311,10 +311,10 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/gnu_arm_embedded/bin/../lib/gcc/]
   ignore line: [c:/gnu_arm_embedded/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/gnu_arm_embedded/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
-  ignore line: [[2/2] Linking CXX static library libcmTC_14bf0.a]
-  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_14bf0.dir/CMakeCXXCompilerABI.cpp.obj: plugin needed to handle lto object]
-  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_14bf0.a(CMakeCXXCompilerABI.cpp.obj): plugin needed to handle lto object]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'STM32' '-mcpu=cortex-m3' '-mthumb' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-ffreestanding' '-flto' '-fno-move-loop-invariants' '-Wall' '-Wextra' '-fabi-version=0' '-fno-exceptions' '-fno-rtti' '-fno-use-cxa-atexit' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [[2/2] Linking CXX static library libcmTC_18012.a]
+  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ar.exe: CMakeFiles/cmTC_18012.dir/CMakeCXXCompilerABI.cpp.obj: plugin needed to handle lto object]
+  ignore line: [C:\gnu_arm_embedded\bin\arm-none-eabi-ranlib.exe: libcmTC_18012.a(CMakeCXXCompilerABI.cpp.obj): plugin needed to handle lto object]
   ignore line: []
   ignore line: []
   implicit libs: []

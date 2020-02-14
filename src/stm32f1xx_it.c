@@ -102,12 +102,12 @@ void Goto_Main_Prog(void) {
 
 for (uint32_t i = 0x08001004; i <= 0x08008004; i+=0x200) {
 
-		if (*(uint32_t*) i != 0xFFFF) {
+		if (*(uint32_t*) i != 0xFFFFFFFF) {
 
 			((void (*)(void)) *(uint32_t*) i) ();
 		}
 	}
-
+  Reset_Handler();
 }
 
 void HardFault_Handler(void)
