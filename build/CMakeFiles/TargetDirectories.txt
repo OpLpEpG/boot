@@ -1,3 +1,0 @@
-D:/Projects/vsc/boot/build/CMakeFiles/boot.elf.dir
-D:/Projects/vsc/boot/build/CMakeFiles/edit_cache.dir
-D:/Projects/vsc/boot/build/CMakeFiles/rebuild_cache.dir
