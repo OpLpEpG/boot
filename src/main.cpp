@@ -11,7 +11,7 @@
 
 #define PAGE_PART_STD 128
 
-#ifdef PROTOCOL_MODBUS
+#ifdef CONFIG_PROTOCOL_MODBUS
 // bootloader test commad
 #define CMD_BOOT      100
 // bootloader exit

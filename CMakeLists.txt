@@ -2,7 +2,8 @@
 
 cmake_minimum_required(VERSION 3.13.1)
 
-message("SRC ${CMAKE_SOURCE_DIR} end")
+#set(ENV{srctree}            ${ZEPHYR_BASE})
+#set(ENV{KCONFIG_CONFIG}     ${DOTCONFIG})
 
 set(STM32_MODEL STM32F103C8)
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Modules/STM32.cmake)
@@ -11,6 +12,28 @@ set(STM32_STARTUP_SOURCE system/CMSIS/Device/Source/startup_stm32f103xb.S)
 
 
 project(boot)
+
+message("SRC ${CMAKE_SOURCE_DIR} BIn: ${PROJECT_BINARY_DIR} end")
+
+set(DOTCONFIG               ${PROJECT_BINARY_DIR}/.config)
+set(ENV{KCONFIG_CONFIG}     ${DOTCONFIG})
+set(ENV{KCONFIG_AUTOHEADER} ${PROJECT_BINARY_DIR}/autoconf.h)
+set(KCONFIG ${CMAKE_SOURCE_DIR}/Kconfig)
+
+
+add_custom_target(
+    guiconfig
+    ${CMAKE_COMMAND} -E env
+    KCONFIG_CONFIG=${DOTCONFIG}
+    guiconfig
+    ${KCONFIG}
+    COMMAND
+    ${CMAKE_COMMAND} -E env
+    KCONFIG_AUTOHEADER=$ENV{KCONFIG_AUTOHEADER}
+    genconfig
+    ${KCONFIG}
+) 
+
 
 #include( ${CMAKE_CURRENT_SOURCE_DIR}/Modules/FindSTM32Cube.cmake NO_POLICY_SCOPE)
 
@@ -34,6 +57,7 @@ add_definitions(-DUSE_ARDUINO_MAIN)
 add_definitions(-DHSE_VALUE=8000000)
 
 include_directories (include/ 
+                     ${PROJECT_BINARY_DIR}
 					 system/_LCC/Inc
 					 system/CMSIS/Include
 					 system/CMSIS/Device/Include
