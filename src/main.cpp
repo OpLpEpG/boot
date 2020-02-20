@@ -21,7 +21,7 @@
 #define GET_CMD (b[1])
 #define CURR_ADR (*(uint32_t*) &b[2])
 #define CMD_PREAMB (1+1+4)
-#else
+#elif CONFIG_PROTOCOL_1B
 // bootloader test commad
 #define CMD_BOOT      0x8
 // bootloader exit
@@ -45,7 +45,7 @@
 #ifdef USE_USART2
 #define com Serial2
 #endif
-#ifdef USE_USART3
+#ifdef CONFIG_USE_UART3
 #define com Serial3
 #endif
 

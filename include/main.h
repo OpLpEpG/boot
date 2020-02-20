@@ -46,8 +46,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#include <autoconf.h>
-
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_ll_rcc.h"
 #include "stm32f1xx_ll_bus.h"

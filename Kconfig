@@ -1,7 +1,17 @@
 mainmenu "modbus Bootloader"
 
-config PROTOCOL_MODBUS
-    bool "протокол обмена MODBUS"
-    default y    
 
-rsource system/_LCC/Kconfig
+choice PROTOCOL_CHOICE
+	bool "select protokol"
+    
+config PROTOCOL_MODBUS
+	bool "modbus"
+
+config PROTOCOL_1B
+	bool "one byte"
+
+config PROTOCOL_2B
+	bool "two byte"
+endchoice
+
+rsource "system/_LCC/Kconfig"

@@ -1,19 +1,19 @@
 /*
  * dev.cpp
  *
- *  Created on: 29 ÿíâ. 2019 ã.
+ *  Created on: 29 ï¿½ï¿½ï¿½. 2019 ï¿½.
  *      Author: Oleg
  */
 #include <dev.h>
 
 
 
-#ifndef UNUSE_DEVROOT
-dev_c* dev_root_c::devs[DEV_COUNT];
+#ifdef CONFIG_USE_DEVROOT
+dev_c* dev_root_c::devs[CONFIG_DEV_COUNT];
 uint8_t dev_root_c::cnt;
 #endif
 
-#ifdef USE_ARDUINO_MAIN
+#ifdef CONFIG_USE_ARDUINO_MAIN
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 #pragma GCC diagnostic ignored "-Wmissing-declarations"

@@ -1,7 +1,7 @@
 /*
  * dev.h
  *
- *  Created on: 28 ÿíâ. 2019 ã.
+ *  Created on: 28 ï¿½ï¿½ï¿½. 2019 ï¿½.
  *      Author: Oleg
  */
 
@@ -11,13 +11,13 @@
 #include <stdint.h>
 #include <string.h>
 #include <tools.h>
+#include <autoconf.h>
 
-#ifndef DEV_COUNT
-# define DEV_COUNT 16
-#endif
 
+#ifdef CONFIG_USE_ARDUINO_MAIN
 void Setup(void);
 void Loop(void);
+#endif
 
 typedef enum {
 	DEV_OK,
@@ -86,7 +86,7 @@ protected:
 private:
 };*/
 
-#ifndef UNUSE_DEVROOT
+#ifdef CONFIG_USE_DEVROOT
 class dev_root_c {
 public:
 	//dev_root_c(): cnt(0) {}
@@ -108,14 +108,14 @@ public:
 		for(uint8_t i = 0; i< cnt; i++) devs[i]->end();
 	}
 public:
-    static dev_c* devs[DEV_COUNT];
+    static dev_c* devs[CONFIG_DEV_COUNT];
     static uint8_t cnt;
 };
 #endif
 
 inline dev_c::dev_c(): status(DEV_OK)
 {
-#ifndef UNUSE_DEVROOT
+#ifdef CONFIG_USE_DEVROOT
 	dev_root_c::add(this);
 #endif
 }

@@ -61,45 +61,6 @@ typedef enum {
 
 //USE_USART3=256,UART_HALFDUPLEX,UART_TXE_1,TXE_PORTC,13
 
-#ifdef USE_USART1
-#if (PP_NARG(USE_USART1) == 1)
-# define USE_USART1_ARG UART_1,GETARG_1(USE_USART1),FULDUPLEX,TXE_NONE,PORTA,PIN1
-#elif (PP_NARG(USE_USART1) == 2)
-#define USE_USART1_ARG UART_1,EXTARG_2(USE_USART1),TXE_NONE,PORTA,PIN1
-#elif (PP_NARG(USE_USART1) == 5)
-#define USE_USART1_ARG UART_1, EXTARG_5(USE_USART1)
-#else
-# error "USE_USART1 arg count [1,2,5] !!!"
-#endif
-#endif
-
-#ifdef USE_USART2
-#if (PP_NARG(USE_USART2) == 1)
-# define USE_USART2_ARG UART_2,GETARG_1(USE_USART2),FULDUPLEX,TXE_NONE,PORTA,PIN1
-#elif (PP_NARG(USE_USART2) == 2)
-#define USE_USART2_ARG UART_2,EXTARG_2(USE_USART2),TXE_NONE,PORTA,PIN1
-#elif (PP_NARG(USE_USART2) == 5)
-#define USE_USART2_ARG UART_2, EXTARG_5(USE_USART2)
-#else
-# error "USE_USART1 arg count [1,2,5] !!!"
-#endif
-#endif
-
-#ifdef USE_USART3
-#if (PP_NARG(USE_USART3) == 1)
-# define USE_USART3_ARG UART_3,GETARG_1(USE_USART3),FULDUPLEX,TXE_NONE,PORTA,PIN1
-#elif (PP_NARG(USE_USART3) == 2)
-#define USE_USART3_ARG UART_3,EXTARG_2(USE_USART3),TXE_NONE,PORTA,PIN1
-#elif (PP_NARG(USE_USART3) == 5)
-#define USE_USART3_ARG UART_3, EXTARG_5(USE_USART3)
-#else
-# error "USE_USART3 arg count [1,2,5] !!!"
-#endif
-#endif
-
-#define UART_TEMPLATE uart_num_e UART_NO, uint16_t BUFF_LEN, uart_mode_e UART_MODE, uart_txe_e TX_MODE, uart_txe_num_e PORT, uint32_t PIN
-#define UART_INSTANSE UART_NO, BUFF_LEN, UART_MODE, TX_MODE, PORT, PIN
-
 template <uart_num_e UART_NO, uint16_t BUFF_LEN, uart_mode_e UART_MODE, uart_txe_e TX_MODE, uart_txe_num_e PORT, uint32_t PIN>
 class uart_c : public dev_c// rwdev_c
 {
@@ -315,16 +276,14 @@ public:
 
 };
 
-
-
-#ifdef USE_USART1
-extern uart_c<USE_USART1_ARG> Serial1;
+#ifdef CONFIG_USE_UART1
+extern uart_c<UART_1, CONFIG_UART1_BUFF_LEN, CONFIG_UART1_MODE, CONFIG_UART1_TXE, CONFIG_UART1_TXE_PORT, CONFIG_UART1_TXE_PIN> Serial1;
 #endif
-#ifdef USE_USART2
-extern uart_c<USE_USART2_ARG> Serial2;
+#ifdef CONFIG_USE_UART2
+extern uart_c<UART_2, CONFIG_UART2_BUFF_LEN, CONFIG_UART2_MODE, CONFIG_UART2_TXE, CONFIG_UART2_TXE_PORT, CONFIG_UART2_TXE_PIN> Serial2;
 #endif
-#ifdef USE_USART3
-extern uart_c<USE_USART3_ARG> Serial3;
+#ifdef CONFIG_USE_UART3
+extern uart_c<UART_3, CONFIG_UART3_BUFF_LEN, CONFIG_UART3_MODE, CONFIG_UART3_TXE, CONFIG_UART3_TXE_PORT, CONFIG_UART3_TXE_PIN> Serial3;
 #endif
 
 #endif /* UART_H_ */

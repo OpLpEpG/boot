@@ -32,6 +32,9 @@ add_custom_target(
     KCONFIG_AUTOHEADER=$ENV{KCONFIG_AUTOHEADER}
     genconfig
     ${KCONFIG}
+    COMMAND
+    py
+    ${CMAKE_SOURCE_DIR}/repl.py
 ) 
 
 
@@ -42,18 +45,18 @@ file(GLOB_RECURSE SOURCE_FILES  src/*.c src/*.cpp)
 
 #add_definitions(-DUSE_USART1=256)
 #add_definitions(-DUSE_USART2=256,HALFDUPLEX)
-add_definitions(-DNDEBUG)
-add_definitions(-DUSE_USART3=256,FULDUPLEX,TXE_HI,PORTC,PIN13)
+#add_definitions(-DNDEBUG)
+#add_definitions(-DUSE_USART3=256,FULDUPLEX,TXE_HI,PORTC,PIN13)
 add_definitions(-DUSE_HAL_DRIVER)
 add_definitions(-DUSE_FULL_LL_DRIVER)
 add_definitions(-DSTM32F103xB)
-add_definitions(-DPROTOCOL_MODBUS)
+#add_definitions(-DPROTOCOL_MODBUS)
 #add_definitions(-DUSE_FULL_ASSERT)
 #add_definitions(-DTRACE)
 #add_definitions(-DOS_USE_TRACE_ITM)
 #add_definitions(-DSTM32F10X_MD)
 #add_definitions(-DUSE_STDPERIPH_DRIVER)
-add_definitions(-DUSE_ARDUINO_MAIN)
+#add_definitions(-DUSE_ARDUINO_MAIN)
 add_definitions(-DHSE_VALUE=8000000)
 
 include_directories (include/ 

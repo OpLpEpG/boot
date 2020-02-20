@@ -1,7 +1,7 @@
 /*
  * uart.cpp
  *
- *  Created on: 29 ÿíâ. 2019 ã.
+ *  Created on: 29 ï¿½ï¿½ï¿½. 2019 ï¿½.
  *      Author: Oleg
  */
 
@@ -12,16 +12,14 @@
 #include <dev.h>
 #include <uart.h>
 
-#ifdef USE_USART1
-uart_c<USE_USART1_ARG> Serial1;
+#ifdef CONFIG_USE_UART1
+uart_c<UART_1, CONFIG_UART1_BUFF_LEN, CONFIG_UART1_MODE, CONFIG_UART1_TXE, CONFIG_UART1_TXE_PORT, CONFIG_UART1_TXE_PIN> Serial1;
 #endif
-
-#ifdef USE_USART2
-uart_c<USE_USART2_ARG> Serial2;
+#ifdef CONFIG_USE_UART2
+uart_c<UART_2, CONFIG_UART2_BUFF_LEN, CONFIG_UART2_MODE, CONFIG_UART2_TXE, CONFIG_UART2_TXE_PORT, CONFIG_UART2_TXE_PIN> Serial2;
 #endif
-
-#ifdef USE_USART3
-uart_c<USE_USART3_ARG> Serial3;
+#ifdef CONFIG_USE_UART3
+uart_c<UART_3, CONFIG_UART3_BUFF_LEN, CONFIG_UART3_MODE, CONFIG_UART3_TXE, CONFIG_UART3_TXE_PORT, CONFIG_UART3_TXE_PIN> Serial3;
 #endif
 
 
