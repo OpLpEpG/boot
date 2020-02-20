@@ -3,3 +3,5 @@ mainmenu "modbus Bootloader"
 config PROTOCOL_MODBUS
     bool "протокол обмена MODBUS"
     default y    
+
+rsource system/_LCC/Kconfig

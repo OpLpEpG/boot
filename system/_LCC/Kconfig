@@ -1,0 +1,12 @@
+comment "c++ moduls (arduino paradigma) _LCC"
+
+config USE_ARDUINO_MAIN
+	bool "USE arduino setup() with loop() not main()"
+
+config DEV_COUNT
+	int "length array drivers"
+	default 16
+
+config USE_DEVROOT
+	bool "auto init deinit drivers  use ctatic class  DEVROOT" 
+	default y
