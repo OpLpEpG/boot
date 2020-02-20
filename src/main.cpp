@@ -39,10 +39,10 @@
 #define SET_RESULT(b,r) {*(uint32_t*) BUFF_DATA_PTR(b) = (uint32_t) r;}
 
 
-#ifdef USE_USART1
+#ifdef CONFIG_USE_UART1
 #define com Serial1
 #endif
-#ifdef USE_USART2
+#ifdef CONFIG_USE_UART2
 #define com Serial2
 #endif
 #ifdef CONFIG_USE_UART3
