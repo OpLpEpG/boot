@@ -1,9 +1,9 @@
 mainmenu "modbus Bootloader"
 
-
 choice PROTOCOL_CHOICE
+#	select USE_UARTS11
 	bool "select protokol"
-    
+
 config PROTOCOL_MODBUS
 	bool "modbus"
 
@@ -12,6 +12,14 @@ config PROTOCOL_1B
 
 config PROTOCOL_2B
 	bool "two byte"
+
+config PROTOCOL_CAN
+	bool "CAN bas"
+	select NOUSE_UARTS
 endchoice
+
+config NOUSE_UARTS
+	bool
+	depends on PROTOCOL_CAN
 
 rsource "system/_LCC/Kconfig"

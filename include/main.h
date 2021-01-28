@@ -62,6 +62,7 @@ extern "C" {
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx_hal_flash.h"
 #include "stm32f1xx_hal_flash_ex.h"
+#include "stm32f1xx_hal_can.h"
 
 #if defined(USE_FULL_ASSERT)
 #include "stm32_assert.h"

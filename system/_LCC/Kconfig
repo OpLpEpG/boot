@@ -12,4 +12,13 @@ config DEV_COUNT
 	int "length array drivers"
 	default 16
 	
-rsource "uart.conf"
+if ! NOUSE_UARTS	
+#menu "UART modules" 
+	rsource "uart.conf"
+#endmenu
+endif
+if NOUSE_UARTS	
+#menu "UART modules" 
+	rsource "btcan.conf"
+#endmenu
+endif

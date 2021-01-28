@@ -1,10 +1,15 @@
+
 #include <main.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 #include <dev.h>
+#if CONFIG_PROTOCOL_CAN
+#include <btcan.h>
+#else
 #include <uart.h>
+#endif
 #include <crc16.h>
 #include <flash.h>
 
@@ -31,6 +36,14 @@
 #define GET_CMD (b[0] & 0x0F)
 #define CURR_ADR (*(uint32_t*) &b[1])
 #define CMD_PREAMB (1+4)
+#elif CONFIG_PROTOCOL_CAN
+#define CMD_BOOT      0x8
+#define CMD_READ      0xD
+#define CMD_BOOT_EXIT 0xE
+#define CMD_WRITE     0xF
+#define GET_CMD (b[0] & 0x0F)
+#define CURR_ADR (*(uint32_t*) &b[1])
+#define CMD_PREAMB (1+4)
 #endif
 
 #define BUFF_DATA_PTR(b)  &b[CMD_PREAMB]
@@ -47,6 +60,9 @@
 #endif
 #ifdef CONFIG_USE_UART3
 #define com Serial3
+#endif
+#ifdef CONFIG_PROTOCOL_CAN
+#define com BootCan
 #endif
 
 void SystemClock_Config(void);
@@ -68,7 +84,7 @@ void Loop(void)
 	uint8_t b[com.buflen];
 	uint16_t cnt = 0;
 
-	if ((com.read(256, b, &cnt) == DEV_OK) && (crc16(b, cnt) == 0))
+	if ((com.read(com.buflen, b, &cnt) == DEV_OK) && (crc16(b, cnt) == 0))
 	{
 		   switch(GET_CMD)
 		   {
