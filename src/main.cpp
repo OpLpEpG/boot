@@ -37,13 +37,15 @@
 #define CURR_ADR (*(uint32_t*) &b[1])
 #define CMD_PREAMB (1+4)
 #elif CONFIG_PROTOCOL_CAN
-#define CMD_BOOT      0x8
-#define CMD_READ      0xD
-#define CMD_BOOT_EXIT 0xE
-#define CMD_WRITE     0xF
-#define GET_CMD (b[0] & 0x0F)
-#define CURR_ADR (*(uint32_t*) &b[1])
-#define CMD_PREAMB (1+4)
+// bootloader test commad
+#define CMD_BOOT      100
+// bootloader exit
+#define CMD_READ      101
+#define CMD_BOOT_EXIT 102
+#define CMD_WRITE     103
+#define GET_CMD (b[1])
+#define CURR_ADR (*(uint32_t*) &b[2])
+#define CMD_PREAMB (1+1+4)
 #endif
 
 #define BUFF_DATA_PTR(b)  &b[CMD_PREAMB]
